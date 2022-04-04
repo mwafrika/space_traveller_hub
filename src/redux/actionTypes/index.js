@@ -1,0 +1,2 @@
+export const DISPLAY_ALL_DRAGONS = ' DISPLAY_DRAGONS';
+export const RESERVE_DRAGON = ' RESERVE_DRAGON';
