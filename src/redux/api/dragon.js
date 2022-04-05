@@ -4,3 +4,4 @@ import axios from 'axios';
 const url = 'https://api.spacexdata.com/v3/dragons';
 
 export const getDragons = () => axios.get(url);
+export const getOneDragon = (id) => axios.get(url, id);

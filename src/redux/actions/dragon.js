@@ -1,5 +1,5 @@
 import { DISPLAY_ALL_DRAGONS, RESERVE_DRAGON } from '../actionTypes';
-import { getDragons } from '../api/dragon';
+import { getDragons, getOneDragon } from '../api/dragon';
 
 export const displayDragons = () => async (dispatch) => {
   const { data } = await getDragons();
@@ -10,6 +10,7 @@ export const displayDragons = () => async (dispatch) => {
 };
 
 export const reserveDragon = (id) => async (dispatch) => {
+  await getOneDragon(id);
   dispatch({
     type: RESERVE_DRAGON,
     payload: id,

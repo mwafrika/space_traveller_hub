@@ -25,6 +25,14 @@
   flex-direction: column;
 }
 
+.reserved {
+  background-color: cadetblue;
+  width: 5rem;
+  padding: 5px 10px;
+  border-radius: 2rem;
+  color: white;
+}
+
 .dragon-text button {
   border: none;
   background-color: cornflowerblue;
