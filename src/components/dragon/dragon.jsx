@@ -7,13 +7,16 @@ const dragon = ({ dragon }) => {
   console.log(dragon, 'child dragon');
   return (
     <section className='dragon-card'>
-      <div>
+      <div className='dragon-img'>
         <img src={dragon.flickr_images[0]} alt='dragon' />
       </div>
 
-      <div>
-        <h3>{dragon.name}</h3>
-        <h3>{dragon.type}</h3>
+      <div className='dragon-text'>
+        <div>
+          <h3>{dragon.name}</h3>
+          <h3>{dragon.type}</h3>
+        </div>
+        <button type='button'>Reserve Dragon</button>
       </div>
     </section>
   );

@@ -1,3 +1,51 @@
 .dragon-card {
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10rem;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dragon-img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.dragon-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.dragon-text {
+  width: 400px;
+}
+
+.dragon-text button {
+  border: none;
+  background-color: cornflowerblue;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+}
+
+.dragon-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header {
+  height: 5rem;
+  width: 100%;
+  background-color: cornflowerblue;
+  border-bottom: 2px solid rgba(58, 57, 57, 0.3);
+  margin-bottom: 20px;
 }
