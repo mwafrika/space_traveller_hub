@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 10rem;
+  height: 15rem;
   column-gap: 20px;
   flex-wrap: wrap;
 }
 
 .dragon-img {
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 100%;
 }
 
 .dragon-img img {
@@ -20,6 +20,9 @@
 
 .dragon-text {
   width: 400px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .dragon-text button {
@@ -30,6 +33,7 @@
   border-radius: 5px;
   color: white;
   font-weight: 500;
+  width: 150px;
 }
 
 .dragon-list {
