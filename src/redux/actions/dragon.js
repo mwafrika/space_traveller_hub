@@ -3,6 +3,7 @@ import { getDragons } from '../api/dragon';
 
 export const displayDragons = () => async (dispatch) => {
   const { data } = await getDragons();
+  console.log(data, 'data');
   dispatch({
     type: DISPLAY_ALL_DRAGONS,
     payload: data,
