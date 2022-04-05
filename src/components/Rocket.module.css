@@ -1,12 +1,10 @@
-* {
-  box-sizing: border-box;
-}
 .rocketCardContainer {
   display: flex;
+  align-items: center;
   flex-direction: row;
-
   gap: 20px;
   padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .rocketDescription {
@@ -14,10 +12,11 @@
   flex-direction: column;
   padding: 10px;
   gap: 10px;
+  font-size: 1.1rem;
 }
 
 .rocketImg {
-  width: 350px;
+  width: 400px;
   height: auto;
 }
 

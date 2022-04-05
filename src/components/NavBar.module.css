@@ -1,8 +1,20 @@
 .header {
   display: flex;
-  gap: 200px;
-  padding: 30px 50px;
-  margin-bottom: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 1px solid black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
 .logoImg {
@@ -10,16 +22,21 @@
   height: 50px;
 }
 
-.logo {
-  display: flex;
-}
-
 .navBar {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 
 .navLink {
   list-style: none;
   font-size: 24px;
+}
+
+.navLink a {
+  text-decoration: none;
+}
+
+.myProfile {
+  border-left: 1px solid black;
+  padding-left: 10px;
 }

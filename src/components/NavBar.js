@@ -7,18 +7,21 @@ const links = [
   {
     id: 1,
     path: '/',
-    text: 'Rocket',
+    text: 'Rocket  ',
+    style: classes.rocket,
   },
 
   {
     id: 2,
     path: '/books',
-    text: 'Dragon',
+    text: 'Dragon ',
+    style: classes.dragon,
   },
   {
     id: 3,
     path: '/catagories',
-    text: 'Profile',
+    text: 'My Profile ',
+    style: classes.myProfile,
   },
 ];
 const NavBar = () => (
@@ -30,7 +33,7 @@ const NavBar = () => (
       </div>
       <ul className={classes.navBar}>
         {links.map((link) => (
-          <li key={link.id} className={classes.navLink}>
+          <li key={link.id} className={`${classes.navLink} ${link.style}`}>
             <NavLink to={link.path}>{link.text}</NavLink>
           </li>
         ))}
