@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-const dragon = () => {
+const Dragon = () => {
   const dispatch = useDispatch();
   const dragon = useSelector((state) => state.dragonReducer);
   useEffect(() => {
@@ -18,4 +18,4 @@ const dragon = () => {
   );
 };
 
-export default dragon;
+export default Dragon;
