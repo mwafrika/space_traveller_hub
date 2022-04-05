@@ -1,12 +1,15 @@
-table, td, th {
-    border: 1px solid gray;
-    border-collapse: collapse;
+table,
+td,
+th {
+  border: 1px solid gray;
+  border-collapse: collapse;
 }
+
 .mission {
-    background-color: lightgray;
-    color: black;
+  background-color: lightgray;
+  color: black;
 }
 
 .mission:nth-of-type(odd) {
-    background-color: white;
+  background-color: white;
 }
