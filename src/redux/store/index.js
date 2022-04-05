@@ -1,19 +1,10 @@
 /* eslint-disable no-underscore-dangle */
-import {
-  combineReducers, createStore, applyMiddleware, compose,
-} from 'redux';
+import { combineReducers, createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import dragonReducer from '../reducers/dragon';
+import missions from '../reducers/missions';
 
-const rootReducer = combineReducers({ dragonReducer });
+const rootReducer = combineReducers({ missions });
 
-const store = createStore(
-  rootReducer,
-  { dragonReducer: [] },
-  compose(
-    applyMiddleware(thunk),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-  ),
-);
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 export default store;
