@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  gap: 200px;
+  padding: 30px 50px;
+  margin-bottom: 100px;
+}
+
+.logoImg {
+  width: 80px;
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+}
+
+.navBar {
+  display: flex;
+  gap: 40px;
+}
+
+.navLink {
+  list-style: none;
+  font-size: 24px;
+}
