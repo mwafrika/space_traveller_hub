@@ -25,7 +25,7 @@ const links = [
   },
   {
     id: 4,
-    path: '/profile',
+    path: '/catagories',
     text: 'My Profile ',
     style: classes.myProfile,
   },
