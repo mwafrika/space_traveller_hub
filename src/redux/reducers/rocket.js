@@ -27,17 +27,17 @@ const RocketReducer = (state = defaultState, action = {}) => {
           if (rocket.id !== action.payload.id) {
             return rocket;
           }
-          return { ...rocket, reserved: true };
+          return { ...rocket, reserved: !rocket.reserved };
         }),
       };
     case CANCEL_RESERVED_ROCKET:
       return {
         ...state,
-        list: state.map((rocket) => {
+        list: state.list.map((rocket) => {
           if (rocket.id !== action.payload.id) {
             return rocket;
           }
-          return { ...rocket, reserved: false };
+          return { ...rocket, reserved: !rocket.reserved };
         }),
       };
     default:

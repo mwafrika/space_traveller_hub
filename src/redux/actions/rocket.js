@@ -40,7 +40,7 @@ export const retrieveAPIRockets = () => async (dispatch) => {
     id: rocket.id,
     name: rocket.rocket_name,
     description: rocket.description,
-    image: rocket.flickr_images[0],
+    image: rocket.flickr_images[1],
     reserved: false,
   }));
   dispatch(rocketsFetched(rockets));

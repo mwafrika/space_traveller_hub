@@ -1,13 +1,16 @@
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
-  margin-bottom: 50px;
   margin-left: 20px;
   margin-right: 20px;
   border-bottom: 1px solid black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: fixed;
+  top: 0;
+  gap: 35vw;
+  background-color: white;
+  width: 100%;
 }
 
 .logo {

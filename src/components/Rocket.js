@@ -46,8 +46,8 @@ const Rocket = (props) => {
           <img src={image} alt="rocket" className={classes.rocketImg} />
         </div>
         <div className={classes.rocketDescription}>
-          <h2>{name}</h2>
-          <p>
+          <h2 className={classes.name}>{name}</h2>
+          <p className={classes.description}>
             <span className={classes.reserved}>
               {reserved ? 'Reserved' : ''}
             </span>
