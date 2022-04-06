@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { displayDragons } from '../../redux/actions/dragon';
-import '../../assets/css/style.css';
+import '../../assets/styles/style.css';
 import Dragon from './dragon';
 
 const DragonList = () => {

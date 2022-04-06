@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { displayRockets } from '../redux/actions/rocket';
-import NavBar from './NavBar';
+import { displayRockets } from '../../redux/actions/rocket';
+import NavBar from '../header/NavBar';
 import Rocket from './Rocket';
-import classes from './RocketList.module.css';
+import classes from '../../assets/styles/RocketList.module.css';
 
 const RocketList = () => {
   const dispatch = useDispatch();

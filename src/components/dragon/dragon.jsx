@@ -3,7 +3,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { reserveDragon } from '../../redux/actions/dragon';
-import '../../assets/css/style.css';
+import '../../assets/styles/style.css';
 
 const dragon = ({ dragon }) => {
   const dispatch = useDispatch();
