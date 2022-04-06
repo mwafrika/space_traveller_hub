@@ -1,6 +1,7 @@
 import {
   DISPLAY_ALL_DRAGONS,
   RESERVE_DRAGON,
+  CANCEL_RESERVED_DRAGON,
 } from '../actionTypes/actionTypes';
 
 const DragonReducer = (state = [], action = {}) => {
@@ -13,6 +14,13 @@ const DragonReducer = (state = [], action = {}) => {
           return dragon;
         }
         return { ...dragon, reserved: true };
+      });
+    case CANCEL_RESERVED_DRAGON:
+      return state.map((dragon) => {
+        if (dragon.id !== action.payload.id) {
+          return dragon;
+        }
+        return { ...dragon, reserved: false };
       });
 
     default:
