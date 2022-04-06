@@ -2,7 +2,7 @@
 /* eslint-disable jsx-quotes */
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { reserveDragon } from '../../redux/actions/dragon';
+import { reserveDragon, cancelReserveDragon } from '../../redux/actions/dragon';
 import '../../assets/styles/style.css';
 
 const dragon = ({ dragon }) => {
@@ -12,9 +12,19 @@ const dragon = ({ dragon }) => {
     dispatch(reserveDragon(dragon.id));
   };
 
+  const handleCancelReserve = () => {
+    dispatch(cancelReserveDragon(dragon.id));
+  };
+
   const reserveBtn = (
     <button type='button' onClick={handleReserve}>
       Reserve Dragon
+    </button>
+  );
+
+  const cancelReservation = (
+    <button type='button' onClick={handleCancelReserve}>
+      Cancel Reservation
     </button>
   );
 
@@ -30,7 +40,7 @@ const dragon = ({ dragon }) => {
           <h3>{dragon.type}</h3>
         </div>
         {dragon.reserved && <p className='reserved'>Reserved</p>}
-        {reserveBtn}
+        {dragon.reserved ? cancelReservation : reserveBtn}
       </div>
     </section>
   );

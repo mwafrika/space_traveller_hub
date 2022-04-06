@@ -1,6 +1,7 @@
 import {
   DISPLAY_ALL_DRAGONS,
   RESERVE_DRAGON,
+  CANCEL_RESERVED_DRAGON,
 } from '../actionTypes/actionTypes';
 import { getDragons } from '../api/dragon';
 
@@ -24,6 +25,13 @@ export const displayDragons = () => async (dispatch) => {
 export const reserveDragon = (id) => async (dispatch) => {
   dispatch({
     type: RESERVE_DRAGON,
+    payload: { id },
+  });
+};
+
+export const cancelReserveDragon = (id) => async (dispatch) => {
+  dispatch({
+    type: CANCEL_RESERVED_DRAGON,
     payload: { id },
   });
 };
