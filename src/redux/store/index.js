@@ -4,8 +4,12 @@ import {
 } from 'redux';
 import thunk from 'redux-thunk';
 import dragonReducer from '../reducers/dragon';
+import RocketReducer from '../reducers/rocket';
 
-const rootReducer = combineReducers({ dragons: dragonReducer });
+const rootReducer = combineReducers({
+  dragons: dragonReducer,
+  rockets: RocketReducer,
+});
 
 const store = createStore(
   rootReducer,

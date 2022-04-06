@@ -1,4 +1,7 @@
-import { DISPLAY_ALL_DRAGONS, RESERVE_DRAGON } from '../actionTypes';
+import {
+  DISPLAY_ALL_DRAGONS,
+  RESERVE_DRAGON,
+} from '../actionTypes/actionTypes';
 
 const DragonReducer = (state = [], action = {}) => {
   switch (action.type) {
