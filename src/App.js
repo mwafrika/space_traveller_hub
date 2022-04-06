@@ -1,14 +1,22 @@
 /* eslint-disable jsx-quotes */
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { displayDragons } from './redux/actions/dragon';
 import NotFound from './components/notFound';
 import Dragon from './components/dragon/dragonContainer';
 import Missions from './components/missions/missions';
 import RocketList from './components/rockets/RocketList';
 import Profile from './components/dragon/profileContainer';
 
-const App = () => (
-  <>
+const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(displayDragons());
+  }, []);
+
+  return (
     <Router>
       <Routes>
         <Route path='/' index element={<RocketList />} />
@@ -18,7 +26,7 @@ const App = () => (
         <Route path='*' element={<NotFound />} />
       </Routes>
     </Router>
-  </>
-);
+  );
+};
 
 export default App;

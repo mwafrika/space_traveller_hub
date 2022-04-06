@@ -2,7 +2,6 @@ import {
   DISPLAY_ALL_DRAGONS,
   RESERVE_DRAGON,
   CANCEL_RESERVED_DRAGON,
-  RENDER_DRAGON_PROFILE,
 } from '../actionTypes/actionTypes';
 
 const DragonReducer = (state = [], action = {}) => {
@@ -23,14 +22,6 @@ const DragonReducer = (state = [], action = {}) => {
         }
         return { ...dragon, reserved: false };
       });
-    case RENDER_DRAGON_PROFILE:
-      console.log(
-        [...action.payload].filter(
-          (dragon) => dragon.reserved === action.payload,
-        ),
-        'check if true',
-      );
-      return [...action.payload].filter((dragon) => dragon.reserved === true);
     default:
       return state;
   }
