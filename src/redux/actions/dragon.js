@@ -5,16 +5,25 @@ import {
 import { getDragons } from '../api/dragon';
 
 export const displayDragons = () => async (dispatch) => {
-  const { data } = await getDragons();
+  const url = 'https://api.spacexdata.com/v3/dragons';
+  const { data } = await getDragons(url);
+
+  const myData = data.map((d) => ({
+    id: d.id,
+    flickr_images: d.flickr_images[0],
+    name: d.name,
+    type: d.type,
+    reserved: false,
+  }));
   dispatch({
     type: DISPLAY_ALL_DRAGONS,
-    payload: data,
+    payload: myData,
   });
 };
 
 export const reserveDragon = (id) => async (dispatch) => {
   dispatch({
     type: RESERVE_DRAGON,
-    payload: id,
+    payload: { id },
   });
 };

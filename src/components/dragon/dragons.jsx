@@ -1,17 +1,16 @@
 /* eslint-disable jsx-quotes */
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { displayDragons } from '../../redux/actions/dragon';
+import '../../assets/styles/style.css';
 import Dragon from './dragon';
-import '../../assets/css/style.css';
 
 const DragonList = () => {
+  const dragons = useSelector((state) => state.dragons);
   const dispatch = useDispatch();
-  const dragons = useSelector((state) => state.dragonReducer);
   useEffect(() => {
     dispatch(displayDragons());
   }, []);
-
   return (
     <>
       <div className='dragon-list'>

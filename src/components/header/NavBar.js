@@ -1,7 +1,8 @@
+/* eslint-disable jsx-quotes */
 import { NavLink } from 'react-router-dom';
 import React from 'react';
-import classes from './NavBar.module.css';
-import planet1 from '../assets/planet1.png';
+import classes from '../../assets/styles/NavBar.module.css';
+import planet1 from '../../assets/images/planet1.png';
 
 const links = [
   {
@@ -10,15 +11,20 @@ const links = [
     text: 'Rocket  ',
     style: classes.rocket,
   },
-
   {
     id: 2,
-    path: '/books',
-    text: 'Dragon ',
+    path: '/missions',
+    text: 'Missions',
     style: classes.dragon,
   },
   {
     id: 3,
+    path: '/dragons',
+    text: 'Dragon ',
+    style: classes.dragon,
+  },
+  {
+    id: 4,
     path: '/catagories',
     text: 'My Profile ',
     style: classes.myProfile,
@@ -28,7 +34,7 @@ const NavBar = () => (
   <>
     <header className={classes.header}>
       <div className={classes.logo}>
-        <img className={classes.logoImg} src={planet1} alt="planet logo" />
+        <img className={classes.logoImg} src={planet1} alt='planet logo' />
         <h2>Space Travelers Hub</h2>
       </div>
       <ul className={classes.navBar}>

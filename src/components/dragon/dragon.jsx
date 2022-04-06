@@ -1,22 +1,39 @@
 /* eslint-disable camelcase */
 /* eslint-disable jsx-quotes */
 import React from 'react';
-import '../../assets/css/style.css';
+import { useDispatch } from 'react-redux';
+import { reserveDragon } from '../../redux/actions/dragon';
+import '../../assets/styles/style.css';
 
-const dragon = ({ dragon }) => (
-  <section className='dragon-card'>
-    <div className='dragon-img'>
-      <img src={dragon.flickr_images[0]} alt='dragon' />
-    </div>
+const dragon = ({ dragon }) => {
+  const dispatch = useDispatch();
 
-    <div className='dragon-text'>
-      <div>
-        <h3>{dragon.name}</h3>
-        <h3>{dragon.type}</h3>
+  const handleReserve = () => {
+    dispatch(reserveDragon(dragon.id));
+  };
+
+  const reserveBtn = (
+    <button type='button' onClick={handleReserve}>
+      Reserve Dragon
+    </button>
+  );
+
+  return (
+    <section className='dragon-card'>
+      <div className='dragon-img'>
+        <img src={dragon.flickr_images} alt='dragon' />
       </div>
-      <button type='button'>Reserve Dragon</button>
-    </div>
-  </section>
-);
+
+      <div className='dragon-text'>
+        <div>
+          <h3>{dragon.name}</h3>
+          <h3>{dragon.type}</h3>
+        </div>
+        {dragon.reserved && <p className='reserved'>Reserved</p>}
+        {reserveBtn}
+      </div>
+    </section>
+  );
+};
 
 export default dragon;
