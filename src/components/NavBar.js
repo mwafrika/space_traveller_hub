@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import React from 'react';
 import classes from './NavBar.module.css';
 import planet1 from '../assets/planet1.png';
@@ -13,13 +13,13 @@ const links = [
 
   {
     id: 2,
-    path: '/books',
+    path: '/dragon',
     text: 'Dragon ',
     style: classes.dragon,
   },
   {
     id: 3,
-    path: '/catagories',
+    path: '/myprofile',
     text: 'My Profile ',
     style: classes.myProfile,
   },
@@ -34,7 +34,7 @@ const NavBar = () => (
       <ul className={classes.navBar}>
         {links.map((link) => (
           <li key={link.id} className={`${classes.navLink} ${link.style}`}>
-            <NavLink to={link.path}>{link.text}</NavLink>
+            <Link to={link.path}>{link.text}</Link>
           </li>
         ))}
       </ul>

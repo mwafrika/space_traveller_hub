@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NotFound from './components/notFound';
 import Dragon from './components/Dragon';
 import RocketList from './components/RocketList';
-// import NavBar from './components/NavBar';
+import MyProfile from './components/MyProfile';
 
 const App = () => (
   <>
@@ -12,6 +12,7 @@ const App = () => (
       <Routes>
         <Route path="/" index element={<RocketList />} />
         <Route path="/dragons" element={<Dragon />} />
+        <Route path="/myprofile" element={<MyProfile />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

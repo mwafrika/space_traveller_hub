@@ -1,4 +1,5 @@
 /* eslint-disable no-underscore-dangle */
+import { routerReducer } from 'react-router-redux';
 import {
   combineReducers, createStore, applyMiddleware, compose,
 } from 'redux';
@@ -9,11 +10,13 @@ import RocketReducer from '../reducers/rocket';
 const rootReducer = combineReducers({
   dragons: dragonReducer,
   rockets: RocketReducer,
+  routing: routerReducer,
 });
 
 const store = createStore(
   rootReducer,
-  { dragonReducer: [] },
+  { dragons: [] },
+
   compose(
     applyMiddleware(thunk),
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),

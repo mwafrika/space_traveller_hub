@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 const Dragon = () => {
   const dispatch = useDispatch();
-  const dragon = useSelector((state) => state.dragonReducer);
+  const dragon = useSelector((state) => state.dragons);
   useEffect(() => {
     dispatch(dragon());
     console.log('dragons', dragon);

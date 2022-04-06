@@ -7,7 +7,6 @@ import classes from './RocketList.module.css';
 
 const RocketList = () => {
   const dispatch = useDispatch();
-
   const rockets = useSelector((state) => state.rockets);
 
   useEffect(() => {
