@@ -2,6 +2,7 @@ import {
   DISPLAY_ALL_DRAGONS,
   RESERVE_DRAGON,
   CANCEL_RESERVED_DRAGON,
+  RENDER_DRAGON_PROFILE,
 } from '../actionTypes/actionTypes';
 import { getDragons } from '../api/dragon';
 
@@ -33,5 +34,13 @@ export const cancelReserveDragon = (id) => async (dispatch) => {
   dispatch({
     type: CANCEL_RESERVED_DRAGON,
     payload: { id },
+  });
+};
+
+export const renderRocketProfile = () => async (dispatch) => {
+  console.log('reserve actions');
+  dispatch({
+    type: RENDER_DRAGON_PROFILE,
+    payload: true,
   });
 };
