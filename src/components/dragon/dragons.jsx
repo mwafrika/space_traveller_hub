@@ -1,15 +1,25 @@
-/* eslint-disable react/prop-types */
 /* eslint-disable jsx-quotes */
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { displayDragons } from '../../redux/actions/dragon';
 import '../../assets/styles/style.css';
 import Dragon from './dragon';
 
-const DragonList = ({ dragons }) => (
-  <div className='dragon-list'>
-    {dragons.map((dragon) => (
-      <Dragon key={dragon.id} dragon={dragon} />
-    ))}
-  </div>
-);
+const DragonList = () => {
+  const dragons = useSelector((state) => state.dragons);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(displayDragons());
+  }, []);
+  return (
+    <>
+      <div className='dragon-list'>
+        {dragons.map((dragon) => (
+          <Dragon key={dragon.id} dragon={dragon} />
+        ))}
+      </div>
+    </>
+  );
+};
 
 export default DragonList;

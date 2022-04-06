@@ -22,6 +22,7 @@ const DragonReducer = (state = [], action = {}) => {
         }
         return { ...dragon, reserved: false };
       });
+
     default:
       return state;
   }
