@@ -5,11 +5,15 @@
   height: 15rem;
   column-gap: 20px;
   flex-wrap: wrap;
-  gap: 30px;
   padding: 20px;
-  box-shadow: 2px 2px 2px 4px #838383;
+  transition: 0.3s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   margin: 30px 50px;
   border-radius: 10px;
+}
+
+.dragonCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .dragonImg {
@@ -37,16 +41,6 @@
   border-radius: 0.4rem;
   color: white;
 }
-
-/* .dragonText button {
-  width: fit-content;
-  padding: 8px;
-  background-color: blueviolet;
-  color: white;
-  font-size: 1.2rem;
-  border-radius: 10px;
-  cursor: pointer;
-} */
 
 .reserveDragon {
   width: fit-content;
