@@ -3,7 +3,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Profile from './profile';
-import classes from '../../assets/styles/profile.module.css';
+import classes from '../../assets/styles/ReservedRockets.module.css';
 // import NavBar from '../header/NavBar';
 
 const ProfileContainer = () => {
@@ -12,9 +12,9 @@ const ProfileContainer = () => {
 
   return (
     <>
-      <div className={classes.profileContainer}>
+      <div className={classes.reservedRocketContainer}>
         <Profile
-          title="My Dragons"
+          title='My Dragons'
           reservedItems={filterReserved.map((dragon) => ({
             id: dragon.id,
             name: dragon.name,

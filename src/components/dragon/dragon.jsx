@@ -17,13 +17,21 @@ const dragon = ({ dragon }) => {
   };
 
   const reserveBtn = (
-    <button type='button' onClick={handleReserve}>
+    <button
+      type='button'
+      className={classes.reserveDragon}
+      onClick={handleReserve}
+    >
       Reserve Dragon
     </button>
   );
 
   const cancelReservation = (
-    <button type='button' onClick={handleCancelReserve}>
+    <button
+      type='button'
+      className={classes.cancelReserve}
+      onClick={handleCancelReserve}
+    >
       Cancel Reservation
     </button>
   );
@@ -35,7 +43,7 @@ const dragon = ({ dragon }) => {
       </div>
 
       <div className={classes.dragonText}>
-        <div>
+        <div className={classes.dragonContent}>
           <h3>{dragon.name}</h3>
           <h3>{dragon.type}</h3>
         </div>

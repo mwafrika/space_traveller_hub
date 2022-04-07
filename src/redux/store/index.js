@@ -1,7 +1,6 @@
 /* eslint-disable no-underscore-dangle */
-// import { routerReducer } from 'react-router-redux';
 import {
-  combineReducers, createStore, applyMiddleware,
+  combineReducers, createStore, applyMiddleware, compose,
 } from 'redux';
 import thunk from 'redux-thunk';
 import dragonReducer from '../reducers/dragon';
@@ -16,7 +15,10 @@ const rootReducer = combineReducers({
 
 const store = createStore(
   rootReducer,
-  applyMiddleware(thunk),
+  compose(
+    applyMiddleware(thunk),
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+  ),
 );
 
 export default store;

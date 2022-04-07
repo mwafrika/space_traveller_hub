@@ -1,3 +1,4 @@
+/* stylelint-disable csstree/validator */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap');
 
 * {
@@ -8,21 +9,23 @@
 .reservedRocketContainer {
   width: 30rem;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px 2px #323232;
+  height: fit-content;
+  transition: 0.3s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .heading {
-  color: #4d4d4d;
+  color: white;
   text-align: center;
   font-size: 1.5rem;
-  box-shadow: 1px 1px 3px 1px #323232;
   padding: 30px 0;
   width: 100%;
-  font-family: 'Roboto Slab', serif;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: blueviolet;
 }
 
 .reservedRockets {
-  border-bottom: 1px solid black;
   width: 100%;
   color: #3d3d3d;
 }
@@ -31,7 +34,11 @@
   list-style: none;
   text-align: center;
   padding: 20px;
-  box-shadow: 1px 1px 3px 1px #323232;
-  font-family: 'Roboto Slab', serif;
   font-size: 1.2rem;
+  border-top: gray 1px solid;
+}
+
+.reservedRockets li:nth-child(even) {
+  background-color: rgb(186, 145, 226);
+  color: white;
 }

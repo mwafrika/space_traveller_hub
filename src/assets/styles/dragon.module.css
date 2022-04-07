@@ -31,20 +31,45 @@
 }
 
 .reserved {
-  background-color: cadetblue;
+  background-color: rgb(81, 130, 81);
   width: 5rem;
-  padding: 5px 10px;
-  border-radius: 2rem;
+  padding: 2px 5px;
+  border-radius: 0.4rem;
   color: white;
 }
 
-.dragonText button {
-  border: none;
-  background-color: cornflowerblue;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
+/* .dragonText button {
+  width: fit-content;
+  padding: 8px;
+  background-color: blueviolet;
   color: white;
-  font-weight: 500;
-  width: 170px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+} */
+
+.reserveDragon {
+  width: fit-content;
+  padding: 8px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cancelReserve {
+  background-color: rgb(230, 230, 230);
+  color: blueviolet;
+  font-size: 1.2rem;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dragonContent {
+  letter-spacing: 1px;
+  color: #4d4d4d;
+  font-size: 1.7rem;
 }
