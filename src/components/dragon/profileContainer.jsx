@@ -13,7 +13,7 @@ const ProfileContainer = () => {
   return (
     <>
       {/* <NavBar /> */}
-      <div className='profile'>
+      <div className='profile-container'>
         <Profile
           title='My Dragons'
           reservedItems={filterReserved.map((dragon) => ({

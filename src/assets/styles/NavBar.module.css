@@ -1,14 +1,12 @@
 .header {
   display: flex;
   align-items: center;
-  padding: 10px 50px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 20px;
   border-bottom: 1px solid black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   position: fixed;
   top: 0;
-  gap: 35vw;
+  justify-content: center;
+  column-gap: 38%;
   background-color: white;
   width: 100%;
 }

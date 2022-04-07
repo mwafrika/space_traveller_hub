@@ -63,14 +63,20 @@
 }
 
 .profile {
-  width: 100%;
-  padding: 0 50px;
+  justify-content: space-around;
   display: flex;
   flex-direction: row;
+  column-gap: 2rem;
+  padding: 2rem;
 }
 
-.profile-description {
-  width: 30%;
+.joinedMission {
+  width: 30rem;
+  text-align: center;
+}
+
+.profile-container {
+  width: 30rem;
 }
 
 .profile-description > p {
