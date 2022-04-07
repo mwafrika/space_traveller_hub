@@ -2,7 +2,7 @@ import {
   DISPLAY_ALL_DRAGONS,
   RESERVE_DRAGON,
   CANCEL_RESERVED_DRAGON,
-} from '../actionTypes/actionTypes';
+} from '../actionTypes';
 
 const DragonReducer = (state = [], action = {}) => {
   switch (action.type) {

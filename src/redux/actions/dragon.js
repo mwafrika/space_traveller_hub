@@ -2,7 +2,7 @@ import {
   DISPLAY_ALL_DRAGONS,
   RESERVE_DRAGON,
   CANCEL_RESERVED_DRAGON,
-} from '../actionTypes/actionTypes';
+} from '../actionTypes';
 import { getDragons } from '../api/dragon';
 
 export const displayDragons = () => async (dispatch) => {
