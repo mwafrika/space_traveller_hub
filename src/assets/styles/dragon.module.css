@@ -1,0 +1,75 @@
+.dragonCard {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 15rem;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  box-shadow: 2px 2px 2px 4px #838383;
+  margin: 30px 50px;
+  border-radius: 10px;
+}
+
+.dragonImg {
+  width: 25rem;
+  height: 100%;
+}
+
+.dragonImg img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.dragonText {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.reserved {
+  background-color: rgb(81, 130, 81);
+  width: 5rem;
+  padding: 2px 5px;
+  border-radius: 0.4rem;
+  color: white;
+}
+
+/* .dragonText button {
+  width: fit-content;
+  padding: 8px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+} */
+
+.reserveDragon {
+  width: fit-content;
+  padding: 8px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cancelReserve {
+  background-color: rgb(230, 230, 230);
+  color: blueviolet;
+  font-size: 1.2rem;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dragonContent {
+  letter-spacing: 1px;
+  color: #4d4d4d;
+  font-size: 1.7rem;
+}

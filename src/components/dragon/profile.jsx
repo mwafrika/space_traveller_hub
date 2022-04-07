@@ -1,18 +1,20 @@
 /* eslint-disable jsx-quotes */
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../../assets/styles/style.css';
+import classes from '../../assets/styles/ReservedRockets.module.css';
 
 const Profile = (props) => {
   const { reservedItems, title } = props;
   return (
-    <div className='profile-description'>
-      <p>{title}</p>
-      {reservedItems.map((dragon) => (
-        <div key={dragon.id} className='profile-items'>
-          <p>{dragon.name}</p>
-        </div>
-      ))}
+    <div className={classes.profileDescription}>
+      <h2 className={classes.heading}>{title}</h2>
+      <ul className={classes.reservedRockets}>
+        {reservedItems.map((dragon) => (
+          <li key={dragon.id} className={classes.reservedRocket}>
+            {dragon.name}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

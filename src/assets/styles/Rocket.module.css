@@ -6,7 +6,7 @@
   flex-direction: row;
   gap: 30px;
   padding: 20px;
-  box-shadow: 2px 2px 3px 1px #838383;
+  box-shadow: 2px 2px 2px 4px #838383;
   margin: 30px 50px;
   border-radius: 10px;
 }
@@ -40,6 +40,7 @@
   width: fit-content;
   padding: 8px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .reserved {
@@ -53,7 +54,6 @@
 }
 
 .description {
-  font-family: 'Roboto Slab', serif;
   font-weight: normal;
   letter-spacing: 0.4px;
   line-height: 1.3rem;
@@ -62,7 +62,6 @@
 }
 
 .name {
-  font-family: 'Roboto Slab', serif;
   letter-spacing: 1px;
   color: #4d4d4d;
   font-size: 1.7rem;

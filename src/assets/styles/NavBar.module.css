@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   justify-content: center;
-  column-gap: 38%;
+  column-gap: 28%;
   background-color: white;
   width: 100%;
 }
@@ -16,6 +16,7 @@
   gap: 15px;
   justify-content: center;
   align-items: center;
+  color: #4d4d4d;
 }
 
 .logoImg {

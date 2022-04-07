@@ -29,11 +29,11 @@ const App = () => {
           <NavBar />
           <div className={classes.mainComponents}>
             <Routes>
-              <Route path="/" index element={<RocketList />} />
-              <Route path="/dragons" element={<Dragon />} />
-              <Route path="/missions" element={<Missions />} />
-              <Route path="/myprofile" element={<MyProfile />} />
-              <Route path="*" element={<NotFound />} />
+              <Route path='/' index element={<RocketList />} />
+              <Route path='/dragons' element={<Dragon />} />
+              <Route path='/missions' element={<Missions />} />
+              <Route path='/myprofile' element={<MyProfile />} />
+              <Route path='*' element={<NotFound />} />
             </Routes>
           </div>
         </Router>
