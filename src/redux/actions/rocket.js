@@ -4,7 +4,7 @@ import {
   ROCKETS_FETCHED,
   STARTED_FETCHING_ROCKETS,
   ERROR_FETCHING_ROCKETS,
-} from '../actionTypes/actionTypes';
+} from '../actionTypes';
 import getRockets from '../api/rocket';
 
 export const rocketsFetchingStarted = () => ({

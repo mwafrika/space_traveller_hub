@@ -4,7 +4,7 @@ import {
   STARTED_FETCHING_ROCKETS,
   ROCKETS_FETCHED,
   ERROR_FETCHING_ROCKETS,
-} from '../actionTypes/actionTypes';
+} from '../actionTypes';
 
 const defaultState = {
   list: [],

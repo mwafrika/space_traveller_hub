@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import classes from './ReservedRockets.module.css';
+import classes from '../../assets/styles/ReservedRockets.module.css';
 
 const ReservedRockets = () => {
   // eslint-disable-next-line max-len
