@@ -1,7 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 // import { routerReducer } from 'react-router-redux';
 import {
-  combineReducers, createStore, applyMiddleware, compose,
+  combineReducers, createStore, applyMiddleware,
 } from 'redux';
 import thunk from 'redux-thunk';
 import missionReducer from '../reducers/missions';
@@ -17,10 +17,7 @@ const rootReducer = combineReducers({
 
 const store = createStore(
   rootReducer,
-  compose(
-    applyMiddleware(thunk),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-  ),
+  applyMiddleware(thunk),
 );
 
 export default store;
