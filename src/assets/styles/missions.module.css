@@ -1,5 +1,5 @@
 table {
-  margin: 0 20px 0 20px;
+  margin: 10px 20px 10px 20px;
 }
 
 table,
@@ -16,8 +16,4 @@ th {
 
 .mission:nth-of-type(odd) {
   background-color: white;
-}
-
-table {
-  margin: 10px;
 }
