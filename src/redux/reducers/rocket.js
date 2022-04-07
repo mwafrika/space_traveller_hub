@@ -33,7 +33,7 @@ const RocketReducer = (state = defaultState, action = {}) => {
     case CANCEL_RESERVED_ROCKET:
       return {
         ...state,
-        list: state.map((rocket) => {
+        list: state.list.map((rocket) => {
           if (rocket.id !== action.payload.id) {
             return rocket;
           }
