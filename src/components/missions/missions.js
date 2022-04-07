@@ -1,15 +1,18 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import missionsRetrieved from '../../redux/actions/missions';
+import { missionJoined, missionLeft } from '../../redux/actions/missions';
 import styles from '../../assets/styles/missions.module.css';
 import Header from '../header/NavBar';
 
 const Missions = () => {
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(missionsRetrieved());
-  }, [dispatch]);
   const missions = useSelector((state) => state.missions);
+  const handleJoining = (id) => {
+    dispatch(missionJoined(id));
+  };
+  const handleLeave = (id) => {
+    dispatch(missionLeft(id));
+  };
   if (missions.loading) {
     return <span>...Loading</span>;
   }
@@ -21,19 +24,49 @@ const Missions = () => {
       <Header />
       <table>
         <thead>
-          <th>Mission</th>
-          <th>Description</th>
-          <th>Status</th>
-          <th>&nbsp;</th>
-        </thead>
-        {missions.list.map((mission) => (
-          <tr className={styles.mission} key={mission.mission_id}>
-            <td>{mission.mission_name}</td>
-            <td>{mission.description}</td>
-            <td>{mission.status}</td>
-            <td>{mission.status}</td>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>&nbsp;</th>
           </tr>
-        ))}
+        </thead>
+        <tbody>
+          {missions.list.map((mission) => (
+            <tr className={styles.mission} key={mission.mission_id}>
+              <td>{mission.mission_name}</td>
+              <td>{mission.description}</td>
+              <td>
+                {!mission.reserved && (
+                  <span className="badge inactive-badge">NOT A MEMBER</span>
+                )}
+                {mission.reserved && (
+                  <span className="badge active-badge">Active Member</span>
+                )}
+              </td>
+              <td>
+                {mission.reserved && (
+                  <button
+                    type="button"
+                    onClick={() => handleLeave(mission.mission_id)}
+                    className="btn leave-mission-btn"
+                  >
+                    Leave Mission
+                  </button>
+                )}
+                {!mission.reserved && (
+                  <button
+                    type="button"
+                    className="btn"
+                    onClick={() => handleJoining(mission.mission_id)}
+                  >
+                    Join Mission
+                  </button>
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </>
   );
