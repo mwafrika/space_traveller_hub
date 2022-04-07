@@ -4,7 +4,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Profile from './profile';
 import '../../assets/styles/style.css';
-import NavBar from '../header/NavBar';
+// import NavBar from '../header/NavBar';
 
 const ProfileContainer = () => {
   const reservedDragons = useSelector((state) => state.dragons);
@@ -12,8 +12,8 @@ const ProfileContainer = () => {
 
   return (
     <>
-      <NavBar />
-      <div className='profile'>
+      {/* <NavBar /> */}
+      <div className='profile-container'>
         <Profile
           title='My Dragons'
           reservedItems={filterReserved.map((dragon) => ({

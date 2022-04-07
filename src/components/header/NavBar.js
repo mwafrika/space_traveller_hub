@@ -25,7 +25,7 @@ const links = [
   },
   {
     id: 4,
-    path: '/profile',
+    path: '/myprofile',
     text: 'My Profile ',
     style: classes.myProfile,
   },
@@ -40,7 +40,14 @@ const NavBar = () => (
       <ul className={classes.navBar}>
         {links.map((link) => (
           <li key={link.id} className={`${classes.navLink} ${link.style}`}>
-            <NavLink to={link.path}>{link.text}</NavLink>
+            <NavLink
+              to={link.path}
+              style={({ isActive }) => (isActive
+                ? { textDecoration: 'underline' }
+                : { textDecoration: 'none' })}
+            >
+              {link.text}
+            </NavLink>
           </li>
         ))}
       </ul>
