@@ -3,9 +3,11 @@ import {
   MISSIONS_FETCH_FAILED,
   MISSIONS_FETCH_STARTED,
   MISSIONS_RETRIEVED,
+  MISSION_JOINED,
+  MISSION_LEFT,
 } from '../actionTypes';
 
-const missionsRetrieved = () => async (dispatch) => {
+export const missionsRetrieved = () => async (dispatch) => {
   dispatch({ type: MISSIONS_FETCH_STARTED });
   try {
     const res = await missionsService.getAll();
@@ -21,4 +23,11 @@ const missionsRetrieved = () => async (dispatch) => {
   }
 };
 
-export default missionsRetrieved;
+export const missionJoined = (id) => ({
+  type: MISSION_JOINED,
+  id,
+});
+export const missionLeft = (id) => ({
+  type: MISSION_LEFT,
+  id,
+});

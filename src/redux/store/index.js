@@ -4,15 +4,14 @@ import {
   combineReducers, createStore, applyMiddleware,
 } from 'redux';
 import thunk from 'redux-thunk';
-import missionReducer from '../reducers/missions';
 import dragonReducer from '../reducers/dragon';
 import RocketReducer from '../reducers/rocket';
+import missions from '../reducers/missions';
 
 const rootReducer = combineReducers({
   dragons: dragonReducer,
   rockets: RocketReducer,
-  missions: missionReducer,
-  // routing: routerReducer,
+  missions,
 });
 
 const store = createStore(
