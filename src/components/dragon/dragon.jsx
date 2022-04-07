@@ -3,7 +3,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { reserveDragon, cancelReserveDragon } from '../../redux/actions/dragon';
-import '../../assets/styles/style.css';
+import classes from '../../assets/styles/dragon.module.css';
 
 const dragon = ({ dragon }) => {
   const dispatch = useDispatch();
@@ -29,17 +29,17 @@ const dragon = ({ dragon }) => {
   );
 
   return (
-    <section className='dragon-card'>
-      <div className='dragon-img'>
+    <section className={classes.dragonCard}>
+      <div className={classes.dragonImg}>
         <img src={dragon.flickr_images} alt='dragon' />
       </div>
 
-      <div className='dragon-text'>
+      <div className={classes.dragonText}>
         <div>
           <h3>{dragon.name}</h3>
           <h3>{dragon.type}</h3>
         </div>
-        {dragon.reserved && <p className='reserved'>Reserved</p>}
+        {dragon.reserved && <p className={classes.reserved}>Reserved</p>}
         {dragon.reserved ? cancelReservation : reserveBtn}
       </div>
     </section>

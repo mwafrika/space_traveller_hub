@@ -6,7 +6,7 @@
   flex-direction: row;
   gap: 30px;
   padding: 20px;
-  box-shadow: 2px 2px 3px 1px #838383;
+  box-shadow: 2px 2px 2px 4px #838383;
   margin: 30px 50px;
   border-radius: 10px;
 }

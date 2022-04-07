@@ -4,11 +4,11 @@ import ReservedRockets from './rockets/ReservedRockets';
 import ReservedDragons from './dragon/profileContainer';
 import JoinedMission from './missions/joinedMission';
 
-import '../assets/styles/style.css';
+import classes from '../assets/styles/profile.module.css';
 
 const MyProfile = () => (
   <>
-    <main className='profile'>
+    <main className={classes.profile}>
       <ReservedRockets />
       <JoinedMission />
       <ReservedDragons />

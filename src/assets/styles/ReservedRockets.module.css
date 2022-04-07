@@ -29,6 +29,7 @@
 
 .reservedRockets li {
   list-style: none;
+  text-align: center;
   padding: 20px;
   box-shadow: 1px 1px 3px 1px #323232;
   font-family: 'Roboto Slab', serif;
