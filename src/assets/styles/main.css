@@ -25,3 +25,16 @@ body {
   color: red;
   border: 1px solid red;
 }
+
+.badge {
+  display: inline-block;
+  margin: 0 0.5rem 0 0.5rem;
+  width: 9rem;
+  text-align: center;
+  background-color: gray;
+  color: white;
+}
+
+.active-badge {
+  background-color: #00d5ff;
+}
