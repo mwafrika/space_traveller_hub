@@ -8,7 +8,7 @@ import '../assets/styles/style.css';
 
 const MyProfile = () => (
   <>
-    <main className='profile'>
+    <main className="profile">
       <ReservedRockets />
       <JoinedMission />
       <ReservedDragons />
