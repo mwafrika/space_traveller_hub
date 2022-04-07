@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux';
-import NavBar from './NavBar';
 import Rocket from './Rocket';
 import classes from './RocketList.module.css';
 
@@ -9,7 +8,6 @@ const RocketList = () => {
   if (rockets.loading) {
     return (
       <>
-        <NavBar />
         <span>...Loading</span>
       </>
     );
@@ -17,7 +15,6 @@ const RocketList = () => {
   if (rockets.error) {
     return (
       <>
-        <NavBar />
         <span>...There is an error!</span>
       </>
     );
@@ -25,7 +22,6 @@ const RocketList = () => {
 
   return (
     <>
-      <NavBar />
       <div className={classes.rocketListContainer}>
         {rockets.list.map((rocket) => (
           <Rocket

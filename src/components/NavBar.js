@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import React from 'react';
 import classes from './NavBar.module.css';
 import planet1 from '../assets/planet1.png';
@@ -34,7 +34,14 @@ const NavBar = () => (
       <ul className={classes.navBar}>
         {links.map((link) => (
           <li key={link.id} className={`${classes.navLink} ${link.style}`}>
-            <Link to={link.path}>{link.text}</Link>
+            <NavLink
+              to={link.path}
+              style={({ isActive }) => (isActive
+                ? { textDecoration: 'underline' }
+                : { textDecoration: 'none' })}
+            >
+              {link.text}
+            </NavLink>
           </li>
         ))}
       </ul>

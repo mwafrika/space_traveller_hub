@@ -7,11 +7,16 @@ const ReservedRockets = () => {
 
   return (
     <>
-      <ul className={classes.reservedRockets}>
-        {rockets.map((rocket) => (
-          <li key={rocket.id}>{rocket.name}</li>
-        ))}
-      </ul>
+      <div className={classes.reservedRocketContainer}>
+        <h2 className={classes.heading}>Reserved Rockets</h2>
+        <ul className={classes.reservedRockets}>
+          {rockets.map((rocket) => (
+            <li key={rocket.id} className={classes.reservedRocket}>
+              {rocket.name}
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 };
