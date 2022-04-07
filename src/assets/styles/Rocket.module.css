@@ -20,8 +20,14 @@
 }
 
 .rocketImg {
-  width: 400px;
+  width: 25rem;
   height: auto;
+}
+
+.rocketImg img {
+  object-fit: cover;
+  height: 100%;
+  width: 400px;
 }
 
 .reserveRocket {

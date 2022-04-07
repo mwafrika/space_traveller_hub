@@ -39,3 +39,40 @@ body {
 .active-badge {
   background-color: #00d5ff;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .rocketImg {
+    width: 25rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rocketImg img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .rocketCardContainer {
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

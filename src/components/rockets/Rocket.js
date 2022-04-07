@@ -42,8 +42,8 @@ const Rocket = (props) => {
   return (
     <>
       <div className={classes.rocketCardContainer}>
-        <div>
-          <img src={image} alt="rocket" className={classes.rocketImg} />
+        <div className={classes.rocketImg}>
+          <img src={image} alt="rocket" />
         </div>
         <div className={classes.rocketDescription}>
           <h2 className={classes.name}>{name}</h2>
