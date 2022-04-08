@@ -10,18 +10,16 @@ const ProfileContainer = () => {
   const filterReserved = reservedDragons.filter((reserve) => reserve.reserved);
 
   return (
-    <>
-      <div className={classes.reservedRocketContainer}>
-        <Profile
-          title='My Dragons'
-          reservedItems={filterReserved.map((dragon) => ({
-            id: dragon.id,
-            name: dragon.name,
-            reserved: dragon.reserved,
-          }))}
-        />
-      </div>
-    </>
+    <div className={classes.reservedRocketContainer}>
+      <Profile
+        title='My Dragons'
+        reservedItems={filterReserved.map((dragon) => ({
+          id: dragon.id,
+          name: dragon.name,
+          reserved: dragon.reserved,
+        }))}
+      />
+    </div>
   );
 };
 
