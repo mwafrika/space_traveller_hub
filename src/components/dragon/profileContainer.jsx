@@ -4,7 +4,6 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Profile from './profile';
 import classes from '../../assets/styles/ReservedRockets.module.css';
-// import NavBar from '../header/NavBar';
 
 const ProfileContainer = () => {
   const reservedDragons = useSelector((state) => state.dragons);
