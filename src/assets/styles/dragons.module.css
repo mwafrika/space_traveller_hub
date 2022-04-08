@@ -7,3 +7,25 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+  .dragonList {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .dragonList {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .dragonList {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

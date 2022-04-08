@@ -42,3 +42,33 @@
   border-left: 1px solid black;
   padding-left: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .navBar {
+    display: none;
+  }
+
+  .header {
+    column-gap: 20%;
+    justify-content: stretch;
+  }
+}
+
+@media only screen and (max-width: 2560px) {
+  .myLogo {
+    display: none;
+  }
+
+  .navLink {
+    font-size: 1rem;
+  }
+
+  .header {
+    column-gap: 5%;
+    justify-content: space-around;
+  }
+
+  .logo {
+    font-size: 12px;
+  }
+}

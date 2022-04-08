@@ -51,6 +51,7 @@ const NavBar = () => (
           </li>
         ))}
       </ul>
+      <h2 className={classes.myLogo}>Logo</h2>
     </header>
   </>
 );
