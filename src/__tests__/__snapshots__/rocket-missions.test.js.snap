@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main page snapshot tests Dragons Page renders correctly 1`] = `<dragons />`;
+
+exports[`Main page snapshot tests Missions Page renders correctly 1`] = `<missions />`;
+
+exports[`Main page snapshot tests MyProfile Page renders correctly 1`] = `
+<main
+  className="profile"
+>
+  <div
+    className="reservedRocketContainer"
+  >
+    <h2
+      className="heading"
+    >
+      Reserved Rockets
+    </h2>
+    <ul
+      className="reservedRockets"
+    />
+  </div>
+  <div
+    className="reservedRocketContainer"
+  >
+    <h2
+      className="heading"
+    >
+      Joined Missions
+    </h2>
+    <ul
+      className="reservedRockets"
+    />
+  </div>
+  <div
+    className="reservedRocketContainer"
+  >
+    <div
+      className="profileDescription"
+    >
+      <h2
+        className="heading"
+      >
+        My Dragons
+      </h2>
+      <ul
+        className="reservedRockets"
+      />
+    </div>
+  </div>
+</main>
+`;
+
+exports[`Main page snapshot tests RocketList Page renders correctly 1`] = `
+<div
+  className="rocketListContainer"
+/>
+`;
