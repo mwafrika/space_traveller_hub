@@ -20,6 +20,7 @@ body {
   width: 13rem;
   padding: 0.5rem 0.5rem;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .leave-mission-btn {
@@ -47,6 +48,7 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
+    background-color: red;
   }
 
   .rocketImg img {
@@ -58,13 +60,17 @@ body {
   .rocketCardContainer {
     flex-direction: column;
     display: flex;
+    background-color: red;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-/* @media only screen and (min-width: 600px) {
-} */
+@media only screen and (max-width: 600px) {
+  .btn {
+    width: 7rem;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 

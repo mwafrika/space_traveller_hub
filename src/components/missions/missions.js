@@ -1,7 +1,8 @@
+/* eslint-disable jsx-quotes */
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { missionJoined, missionLeft } from '../../redux/actions/missions';
-import styles from '../../assets/styles/missions.module.css';
+import '../../assets/styles/missions.module.css';
 import Header from '../header/NavBar';
 
 const Missions = () => {
@@ -33,31 +34,31 @@ const Missions = () => {
         </thead>
         <tbody>
           {missions.list.map((mission) => (
-            <tr className={styles.mission} key={mission.mission_id}>
+            <tr className='mission' key={mission.mission_id}>
               <td>{mission.mission_name}</td>
               <td>{mission.description}</td>
               <td>
                 {!mission.reserved && (
-                  <span className="badge inactive-badge">NOT A MEMBER</span>
+                  <span className='badge inactive-badge'>NOT A MEMBER</span>
                 )}
                 {mission.reserved && (
-                  <span className="badge active-badge">Active Member</span>
+                  <span className='badge active-badge'>Active Member</span>
                 )}
               </td>
               <td>
                 {mission.reserved && (
                   <button
-                    type="button"
+                    type='button'
                     onClick={() => handleLeave(mission.mission_id)}
-                    className="btn leave-mission-btn"
+                    className='btn leave-mission-btn'
                   >
                     Leave Mission
                   </button>
                 )}
                 {!mission.reserved && (
                   <button
-                    type="button"
-                    className="btn"
+                    type='button'
+                    className='btn'
                     onClick={() => handleJoining(mission.mission_id)}
                   >
                     Join Mission
