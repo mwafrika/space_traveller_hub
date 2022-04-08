@@ -2,8 +2,10 @@
 
 # MV-Module2-capstone
 
-> **Space-Travelers-Hub** is a web application displaying real live data from the SpaceX API. Allows users to book rockets, to book dragons and join selected space missions. You can also cancel any reservation you wish. 
-**The API used for this project are:**
+> **Space-Travelers-Hub** is a web application displaying real live data from the SpaceX API. Allows users to book rockets, to book dragons and join selected space missions. You can also cancel any reservation you wish.
+
+> **The API used for this project are:**
+
 - [Rockets](https://api.spacexdata.com/v3/rockets)
 - [Missions](https://api.spacexdata.com/v3/missions)
 - [Dragons](https://api.spacexdata.com/v3/dragons)
@@ -26,15 +28,15 @@
 
 #### Use the live Website
 
-[CarCollectors Website](https://sboursen.github.io/MV-Module2-capstone/)
+[Space traveller hub](https://space-traveller.netlify.app/dragons)
 
 ### **Option 2**
 
 #### Set up your own copy locally
 
-- Clone [the GitHub Repository](https://github.com/Sboursen/MV-Module2-capstone)
-- Go to the Project `cd MV-Module2-capstone`
-- Run `npm install` to install the _dependencies_ Run `npm run start` to run the live server.
+- Clone [the GitHub Repository](https://github.com/mwafrika/space_traveller_hub)
+- Go to the Project `cd space_traveller_hub`
+- Run `npm install` to install the _dependencies_ Run `npm start` to run the live server.
 
 ## Authors
 
@@ -68,9 +70,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [Cars API](https://carsapi1.docs.apiary.io/#reference/0/cars-collection)
-- [Involvement API](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270)
-- [Logo Generator](https://inkpx.com/word-art-generator)
+- [Space traveller API](https://api.spacexdata.com/v3/)
 
 ## 📝 License
 
