@@ -38,19 +38,114 @@
   text-decoration: none;
 }
 
+.myLogo {
+  font-size: 3rem;
+  color: #4d4d4d;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  right: 10px;
+  top: 25px;
+  z-index: 10;
+}
+
 .myProfile {
   border-left: 1px solid black;
   padding-left: 10px;
 }
 
+.cross {
+  color: white;
+  font-weight: bold;
+}
+
+.navBarMenu {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  column-gap: 20px;
+}
+
 @media only screen and (max-width: 600px) {
   .navBar {
-    display: none;
+    display: none !important;
+  }
+
+  .navBarMenu {
+    display: flex !important;
+    position: relative;
+  }
+
+  .navLink {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .navLink a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .navBarMobile {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    flex-direction: column;
+    padding: 20px;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    opacity: 0.9;
+  }
+
+  .myLogo {
+    display: flex !important;
+    margin-right: 30px;
   }
 
   .header {
     column-gap: 20%;
-    justify-content: stretch;
+    justify-content: space-between !important;
+  }
+
+  .menuNav {
+    overflow-y: scroll;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    background: blueviolet;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    max-width: 100%;
+    z-index: 9;
+    color: white;
+  }
+
+  .menuNav.showMenu {
+    width: 100%;
+  }
+
+  .navBar button {
+    position: fixed;
+    left: 40px;
+    top: 40px;
+    z-index: 10;
+    cursor: pointer;
   }
 }
 
