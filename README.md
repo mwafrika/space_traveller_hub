@@ -16,9 +16,9 @@
 ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/392c8dc5-0810-40ed-9f79-134a80d7fcab/deploy-status)](https://app.netlify.com/sites/space-traveller/deploys)
 
-## sneak peek
+## Screen shoot
+![Peek 2022-04-08 13-26](https://user-images.githubusercontent.com/92645881/162435485-4f45d93d-a1d0-4394-be36-88ef9c9b8776.gif)
 
-![](./src/images/home-screenshot.png)
 
 ## Getting Started
 

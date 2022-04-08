@@ -3,7 +3,7 @@ import {
   RESERVE_DRAGON,
   CANCEL_RESERVED_DRAGON,
 } from '../actionTypes';
-import { getDragons } from '../api/dragon';
+import getDragons from '../api/dragon';
 
 export const displayDragons = () => async (dispatch) => {
   const url = 'https://api.spacexdata.com/v3/dragons';
