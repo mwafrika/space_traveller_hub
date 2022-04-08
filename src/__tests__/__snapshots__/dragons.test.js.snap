@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test dragon page should print dragons very well 1`] = `
+exports[`Test dragons list should return the dragons to passto the childelements 1`] = `
 <section
   className="dragonCard"
 >
