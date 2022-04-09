@@ -8,7 +8,7 @@ import '@testing-library/jest-dom';
 import Dragon from '../components/dragon/dragon';
 
 describe('Test dragons list', () => {
-  it('should return the dragons to passto the childelements', () => {
+  it('should return the dragons to pass to the child elements', () => {
     const dragon = {
       id: 'dragon1',
       name: 'Dragon 1',

@@ -1,5 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Test dragons list should return the dragons to pass to the child elements 1`] = `
+<section
+  className="dragonCard"
+>
+  <div
+    className="dragonImg"
+  >
+    <img
+      alt="dragon"
+      src="https://imgur.com/DaCfMsj.jpg"
+    />
+  </div>
+  <div
+    className="dragonText"
+  >
+    <div
+      className="dragonContent"
+    >
+      <h3>
+        Dragon 1
+      </h3>
+      <h3>
+        Rocket
+      </h3>
+    </div>
+    <button
+      className="reserveDragon"
+      onClick={[Function]}
+      type="button"
+    >
+      Reserve Dragon
+    </button>
+  </div>
+</section>
+`;
+
 exports[`Test dragons list should return the dragons to passto the childelements 1`] = `
 <section
   className="dragonCard"
