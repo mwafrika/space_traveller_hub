@@ -1,0 +1,25 @@
+table {
+  margin: 10px 20px 10px 20px;
+}
+
+table,
+td,
+th {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+.mission {
+  background-color: lightgray;
+  color: black;
+}
+
+.mission:nth-of-type(odd) {
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    margin: 10px 5px 10px 5px;
+  }
+}
