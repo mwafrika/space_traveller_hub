@@ -1,9 +1,9 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import store from './redux/store';
-import RocketList from './components/rockets/RocketList';
-import MyProfile from './components/MyProfile';
+import store from '../redux/store';
+import RocketList from '../components/rockets/RocketList';
+import MyProfile from '../components/MyProfile';
 
 describe('Main page snapshot tests', () => {
   it('RocketList Page renders correctly', () => {

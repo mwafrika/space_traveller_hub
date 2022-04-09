@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test dragon page should print dragons very well 1`] = `
+<section
+  className="dragonCard"
+>
+  <div
+    className="dragonImg"
+  >
+    <img
+      alt="dragon"
+      src="https://imgur.com/DaCfMsj.jpg"
+    />
+  </div>
+  <div
+    className="dragonText"
+  >
+    <div
+      className="dragonContent"
+    >
+      <h3>
+        Dragon 1
+      </h3>
+      <h3>
+        Rocket
+      </h3>
+    </div>
+    <button
+      className="reserveDragon"
+      onClick={[Function]}
+      type="button"
+    >
+      Reserve Dragon
+    </button>
+  </div>
+</section>
+`;
