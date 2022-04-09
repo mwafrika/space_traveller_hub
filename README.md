@@ -2,8 +2,7 @@
 
 # MV-Module2-capstone
 
-> **Space-Travelers-Hub** is a web application displaying real live data from the SpaceX API. Allows users to book rockets, to book dragons and join selected space missions. You can also cancel any reservation you wish.
-
+> The **Space-Travelers-Hub** is a web application that displays real-time data from the SpaceX API. Users can book rockets, dragons, and join selected space missions. You may also cancel any reservations that you wish.
 > **The API used for this project are:**
 
 - [Rockets](https://api.spacexdata.com/v3/rockets)
