@@ -4,8 +4,6 @@ exports[`Main page snapshot tests Dragons Page renders correctly 1`] = `<dragons
 
 exports[`Main page snapshot tests Missions Page renders correctly 1`] = `<missions />`;
 
-exports[`Main page snapshot tests Missions Page renders correctly 2`] = `undefined`;
-
 exports[`Main page snapshot tests MyProfile Page renders correctly 1`] = `
 <main
   className="profile"
