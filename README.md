@@ -13,6 +13,7 @@
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/392c8dc5-0810-40ed-9f79-134a80d7fcab/deploy-status)](https://app.netlify.com/sites/space-traveller/deploys)
 
 ## Screen shoot
